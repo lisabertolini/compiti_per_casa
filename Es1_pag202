@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+
+class Operazioni{
+public:
+   unsigned int primo_num =10;
+    unsigned int secondo_num =5;
+public:
+    unsigned int somma();
+    unsigned int sottrazione();
+    unsigned int moltiplicazione();
+    unsigned int divisione();
+};
+
+int main(){
+    unsigned int a,b,c,d,primo_num,secondo_num;
+    Operazioni operazioni;
+    operazioni.somma();
+    operazioni.sottrazione();
+    operazioni.moltiplicazione();
+    operazioni.divisione();
+    return 0;
+}
+
+unsigned int Operazioni::somma(){
+       unsigned int a=primo_num+secondo_num;
+       cout<<"valore somma:"<<a<<endl;}
+
+unsigned int Operazioni::sottrazione(){
+       unsigned int b=primo_num-secondo_num;
+       cout<<"valore sottrazione:"<<b<<endl;}
+
+unsigned int Operazioni::moltiplicazione(){
+       unsigned int c=primo_num*secondo_num;
+       cout<<"valore moltiplicazione:"<<c<<endl;}
+
+unsigned int Operazioni::divisione(){
+       unsigned int d=primo_num/secondo_num;
+       cout<<"valore divisione:"<<d<<endl;}
