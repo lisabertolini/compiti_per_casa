@@ -1,0 +1,58 @@
+#include <iostream>
+using namespace std;
+
+class Contocorrente{
+public:
+   unsigned int x=5300;  //deposito_denaro
+   unsigned int y=1500;   //prelevare_denaro
+   unsigned int z=15000;  //saldo corrente
+public:
+    unsigned int input_soldi();
+    unsigned int deposito_denaro();
+    unsigned int prelevare_denaro();
+    unsigned int saldo_corrente();
+};
+
+
+class Movimentoconto{
+public:
+    unsigned int x1=2000;//somma da trasferire
+public:
+    unsigned int somma_conto();
+};
+
+
+int main(){
+    unsigned int a,b,c,d,z,x,y,x1;
+
+    Contocorrente contocorrente;
+    contocorrente.deposito_denaro();
+    contocorrente.prelevare_denaro();
+    contocorrente.saldo_corrente();
+
+    Movimentoconto movimentoconto;
+    movimentoconto.somma_conto();
+
+    return 0;
+}
+
+unsigned int Contocorrente::deposito_denaro(){
+       unsigned int a=x;
+       cout<<"deposito denaro:"<<a<<endl;}
+
+unsigned int Contocorrente::prelevare_denaro(){
+    unsigned int b=y;
+    cout<<"prelevare denaro:"<<b<<endl;
+}
+
+unsigned int Contocorrente::saldo_corrente(){
+    unsigned int c=z;
+    cout<<"saldo corrente:"<<c<<endl;
+}
+
+
+unsigned int Movimentoconto::somma_conto(){
+
+    unsigned int d=x1+x;
+    cout<<"trasferimento somma denaro:"<<d<<endl;
+}
